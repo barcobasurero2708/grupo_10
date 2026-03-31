@@ -24,7 +24,6 @@
               <span class="nav__logo">CS2031</span>
             </div>
 
-            <!-- Hidden checkbox for mobile menu toggle -->
             <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
             <label for="nav-toggle" class="nav__toggle">
               <span class="nav__toggle-line nav__toggle-line--top"></span>
@@ -34,16 +33,13 @@
 
             <ul class="nav__list">
               <li class="nav__item">
-                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
-                <a href="#inicio" class="nav__link">Inicio</a>
+                <a href="#hero" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
-                <a href="#sobre" class="nav__link">Acerca de</a>
+                <a href="#about" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
-                <a href="#integrantes" class="nav__link">Equipo</a>
+                <a href="#team" class="nav__link">Equipo</a>
               </li>
             </ul>
           </div>
@@ -54,19 +50,17 @@
         <section id="hero" class="hero">
           <div class="hero__container">
             <div class="hero__content">
-              <h1 id="conflict__error" class="hero__title">Estructuras de Datos & Algoritmos</h1>
+              <h1 class="hero__title">Estructuras de Datos & Algoritmos</h1>
               <p class="hero__subtitle">
                 Explorando el mundo de los algoritmos y la eficiencia computacional
               </p>
               <div class="hero__actions">
-                <a href="#about" class="hero__button hero__button--primary"
-                  >Aprender más</a
-                >
-                <a
-                  href="#team"
-                  class="hero__button hero__button--secondary"
-                  >Conocer al equipo</a
-                >
+                <a href="#about" class="hero__button hero__button--primary">
+                  Aprender más
+                </a>
+                <a href="#team" class="hero__button hero__button--secondary">
+                  Conocer al equipo
+                </a>
               </div>
             </div>
             <div class="hero__visual">
@@ -93,9 +87,8 @@
                 </div>
                 <h3 class="about__card-title">Estructuras Lineales</h3>
                 <p class="about__card-text">
-                  Arrays, listas enlazadas, pilas y colas son las estructuras
-                  fundamentales que permiten organizar y acceder a datos de
-                  manera secuencial. Son la base para algoritmos más complejos.
+                  Arrays, listas enlazadas, pilas y colas son fundamentales
+                  para organizar datos de forma secuencial.
                 </p>
               </div>
 
@@ -105,9 +98,7 @@
                 </div>
                 <h3 class="about__card-title">Árboles y Grafos</h3>
                 <p class="about__card-text">
-                  Los árboles binarios, AVL y grafos representan relaciones
-                  jerárquicas y conexiones entre datos. Son esenciales para
-                  búsquedas eficientes y navegación en redes.
+                  Representan relaciones jerárquicas y conexiones entre datos.
                 </p>
               </div>
 
@@ -117,9 +108,7 @@
                 </div>
                 <h3 class="about__card-title">Complejidad Algorítmica</h3>
                 <p class="about__card-text">
-                  Entender Big O notation es crucial para escribir código
-                  eficiente. La diferencia entre O(n) y O(n²) puede significar
-                  segundos vs horas en datasets grandes.
+                  Entender Big O es clave para código eficiente.
                 </p>
               </div>
             </div>
@@ -136,10 +125,9 @@
             </div>
 
             <div class="team__grid">
-              <!-- INTEGRANTE 1: Reemplaza con tus datos -->
+              <!-- INTEGRANTE 1 -->
               <div class="team-card">
                 <div class="team-card__image">
-                  <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
                   <img
                     src="https://picsum.photos/300/300?random=1"
                     alt="Nombre Integrante 1"
@@ -147,21 +135,40 @@
                   />
                 </div>
                 <div class="team-card__content">
-                  <!-- Aquí tu nombre completo -->
                   <h3 class="team-card__name">Nombre Integrante 1</h3>
-                  <!-- Aquí tu especialidad o rol -->
                   <p class="team-card__role">Tu Especialidad</p>
                   <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
+                    <a href="#" class="team-card__social-link team-card__social-link--github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="team-card__social-link team-card__social-link--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INTEGRANTE 2 -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img
+                    src="https://github.com/UTECAaron.png"
+                    alt="Aaron Romano"
+                    class="team-card__photo"
+                  />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Aaron Romano</h3>
+                  <p class="team-card__role">Backend Developer</p>
+                  <div class="team-card__social">
                     <a
-                      href="#"
+                      href="https://github.com/UTECAaron"
                       class="team-card__social-link team-card__social-link--github"
                     >
                       <i class="fab fa-github"></i>
                     </a>
-                    <!-- Reemplaza # con tu URL de LinkedIn -->
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/aaron-adriano-romano-castro-983b70380/"
                       class="team-card__social-link team-card__social-link--linkedin"
                     >
                       <i class="fab fa-linkedin"></i>
@@ -170,56 +177,27 @@
                 </div>
               </div>
 
-              <!-- INTEGRANTE 2: Reemplaza con tus datos -->
+              <!-- INTEGRANTE 3 -->
               <div class="team-card">
                 <div class="team-card__image">
                   <img
-                    src="https://picsum.photos/300/300?random=2"
-                    alt="Nombre Integrante 2"
+                    src="https://github.com/Johnb1701.png"
+                    alt="John Blas"
                     class="team-card__photo"
                   />
                 </div>
                 <div class="team-card__content">
-                  <h3 class="team-card__name">Nombre Integrante 2</h3>
-                  <p class="team-card__role">Tu Especialidad</p>
+                  <h3 class="team-card__name">John Blas</h3>
+                  <p class="team-card__role">Backend Developer</p>
                   <div class="team-card__social">
                     <a
-                      href="#"
+                      href="https://github.com/Johnb1701"
                       class="team-card__social-link team-card__social-link--github"
                     >
                       <i class="fab fa-github"></i>
                     </a>
                     <a
-                      href="#"
-                      class="team-card__social-link team-card__social-link--linkedin"
-                    >
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- INTEGRANTE 3: Reemplaza con tus datos -->
-              <div class="team-card">
-                <div class="team-card__image">
-                  <img
-                    src="https://picsum.photos/300/300?random=3"
-                    alt="Nombre Integrante 3"
-                    class="team-card__photo"
-                  />
-                </div>
-                <div class="team-card__content">
-                  <h3 class="team-card__name">Nombre Integrante 3</h3>
-                  <p class="team-card__role">Tu Especialidad</p>
-                  <div class="team-card__social">
-                    <a
-                      href="#"
-                      class="team-card__social-link team-card__social-link--github"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a
-                      href="#"
+                      href="https://www.linkedin.com/in/john-dayron-blas-huete-8ab346384/"
                       class="team-card__social-link team-card__social-link--linkedin"
                     >
                       <i class="fab fa-linkedin"></i>
@@ -237,16 +215,16 @@
           <div class="footer__content">
             <div class="footer__brand">
               <span class="footer__logo">CS2031</span>
-              <p class="footer__tagline">Aprendiendo Estructuras de Datos juntos</p>
+              <p class="footer__tagline">
+                Aprendiendo Estructuras de Datos juntos
+              </p>
             </div>
             <div class="footer__links">
               <a href="https://github.com" class="footer__link">
-                <i class="fab fa-github"></i>
-                GitHub
+                <i class="fab fa-github"></i> GitHub
               </a>
               <a href="https://cs.utec.edu.pe" class="footer__link">
-                <i class="fas fa-university"></i>
-                UTEC
+                <i class="fas fa-university"></i> UTEC
               </a>
             </div>
           </div>
